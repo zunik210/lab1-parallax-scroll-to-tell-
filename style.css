@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #444;
+  background: #faf7f4;
+}
+
+/* Parallax sections */
+.parallax {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+/* Seasonal background images */
+.spring {
+  background-image: url("images/spring.jpg");
+}
+
+.summer {
+  background-image: url("images/summer.jpg");
+}
+
+.fall {
+  background-image: url("images/fall.jpg");
+}
+
+.winter {
+  background-image: url("images/winter.jpg");
+}
+
+/* Text sections */
+.content {
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 60px;
+
+  background: #fffaf8;
+}
+
+.content h2 {
+  margin-bottom: 15px;
+}
+
+.content p {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Text cards */
+.card {
+  background: rgba(255, 255, 255, 0.75);
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  backdrop-filter: blur(6px);
+
+  max-width: 500px;
+
+  text-align: center;
+
+  transition: transform 0.5s ease;
+}
+
+/* Small movement when the card is hovered */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h1,
+.card h2 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  line-height: 1.6;
+}
